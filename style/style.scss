@@ -1,0 +1,62 @@
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkDesaturatedCyan: hsl(167, 40%, 24%); //(graphic design text)
+$darkBlue: hsl(198, 62%, 26%); //(photography text)
+$darkModerateCyan: hsl(168, 34%, 41%); //(footer)
+$veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$veryDarkGrayishBlue: hsl(213, 9%, 39%);
+$darkGrayishBlue: hsl(232, 10%, 55%);
+$grayishBlue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+$barlow: 'Barlow', sans-serif;
+$fraunces: 'Fraunces', serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+body{
+    background: #fff;
+    font-family: $fraunces;
+    font-size: 18px;
+    header{
+        // width: 100%;
+        background: url(../images/desktop/image-header.jpg) rgb(254, 255, 200) center;
+        background-size: cover;
+        min-height: 800px;
+        text-align: center;
+        position: relative;
+        
+        .contenedor{
+            nav{
+                position:absolute;
+                right: 30px;
+                a{
+                    text-decoration: none;
+                }
+            }
+
+            h1{
+                display: inline-block;
+                margin-top: 150px;
+                font-size: 70px;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+        
+    }
+    
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
+

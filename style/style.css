@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+body {
+  background: #fff;
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+}
+
+body header {
+  background: url(../images/desktop/image-header.jpg) #feffc8 center;
+  background-size: cover;
+  min-height: 800px;
+  text-align: center;
+  position: relative;
+}
+
+body header .contenedor nav {
+  position: absolute;
+  right: 30px;
+}
+
+body header .contenedor nav a {
+  text-decoration: none;
+}
+
+body header .contenedor h1 {
+  display: inline-block;
+  margin-top: 150px;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: white;
+}
+
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
