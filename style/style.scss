@@ -18,43 +18,165 @@ $fraunces: 'Fraunces', serif;
     padding: 0;
     box-sizing: border-box;
 }
+
 .contenedor{
     width: 90%;
     max-width: 1440px;
     margin: auto;
 }
+
 body{
     background: #fff;
     font-family: $fraunces;
     font-size: 18px;
     header{
-        // width: 100%;
         background: url(../images/desktop/image-header.jpg) rgb(254, 255, 200) center;
         background-size: cover;
         min-height: 800px;
         text-align: center;
         position: relative;
-        
+        overflow: hidden;
         .contenedor{
-            nav{
-                position:absolute;
-                right: 30px;
+            font-family: $barlow;
+            p{
+                font-size: 28px;
+                margin-top: 37px;
+                font-weight: 900;
+                color: #fff;
+            }
+           .contenedor-navegacion{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+           }
+            .menu{
+                font-weight: 700;
+                margin-top: 30px;
                 a{
+                    display: inline-block;
                     text-decoration: none;
+                    font-size: 14px;
+                    text-indent: 5px;
+                    color: #fff;
+                }
+                .enlaces{
+                    margin: 0 30px;
+                    margin-top: 16px;
+                }
+                div{
+                    display: inline-block;
+                    background: #fff;
+                    padding: 10px 0px;
+                    border-radius: 25px;
+                    padding: 15px 20px;
+                    text-align:center;
+                    margin-left: 10px;
+                    .contact{
+                        font-size: 16px;
+                        color: $veryDarkDesaturatedBlue;
+                        font-family: $fraunces;
+                        vertical-align: middle;
+                       
+                    }    
                 }
             }
 
             h1{
                 display: inline-block;
-                margin-top: 150px;
+                margin-top: 100px;
                 font-size: 70px;
+                 font-family: $fraunces;
                 text-transform: uppercase;
                 color: $white;
             }
+
+            .arrow{
+                position: absolute;
+                right: 50%;
+                top:44%;
+            }
+           
         }
+
         
     }
-    
+    section{
+        width: 100%;
+        .contenedor{
+            width: 100%;
+            display: grid;
+            // border: 3px #000 solid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .brand,.audience{
+            grid-column: 1 / span 4;
+        }
+        .graphicDesign{
+            grid-column: 1 / span 2;
+        }
+        .photography{
+            grid-column: 3 / span 2;
+        }
+        .clientTestimonials{
+            grid-column: 1 / span 4;
+        }
+        .milk{
+            grid-column: 1 / span 1;
+        }
+        .orange{
+            grid-column: 2 / span 1;
+        }
+        .cone{
+            grid-column: 3 / span 1;
+        }
+        .sugarcubes{
+            grid-column: 4 / span 1;
+        }
+        .image{
+            width: 100%;
+            height: 100%;
+        }
+
+        .brand,.audience{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            margin: 0;
+        }
+        .imagen,.texto{
+            max-width: 50%;
+            overflow: hidden;
+        }
+        .audience{      
+            flex-direction: row-reverse;
+        }
+        .texto{
+            margin: auto;
+            // margin-top: 250px;
+            text-align: justify;
+            padding: 50px 135px;
+
+            h2{
+                font-size: 48px;
+                font-weight: 900;
+                text-align: left;
+                margin-bottom: 30px;
+                color: $veryDarkDesaturatedBlue;
+            }
+            p{
+                // color: $veryDarkGrayishBlue;
+                color: $darkGrayishBlue;
+                font-family: $barlow;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            h3{
+                margin-top: 30px;
+            }
+        }
+    }
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
