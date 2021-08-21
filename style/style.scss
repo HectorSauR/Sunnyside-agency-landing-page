@@ -111,12 +111,6 @@ body{
         .brand,.audience{
             grid-column: 1 / span 4;
         }
-        .graphicDesign{
-            grid-column: 1 / span 2;
-        }
-        .photography{
-            grid-column: 3 / span 2;
-        }
         .clientTestimonials{
             grid-column: 1 / span 4;
         }
@@ -148,10 +142,16 @@ body{
         .imagen,.texto{
             max-width: 50%;
             overflow: hidden;
+            img{
+                vertical-align: top;
+                text-align: center;
+                max-width: 100%;
+            }
         }
         .audience{      
             flex-direction: row-reverse;
         }
+        
         .texto{
             margin: auto;
             // margin-top: 250px;
@@ -162,7 +162,7 @@ body{
                 font-size: 48px;
                 font-weight: 900;
                 text-align: left;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
                 color: $veryDarkDesaturatedBlue;
             }
             p{
@@ -171,11 +171,59 @@ body{
                 font-family: $barlow;
                 font-size: 16px;
                 font-weight: 400;
+                line-height: 20px;
             }
-            h3{
-                margin-top: 30px;
+            .learnMore{
+                display: inline-block;
+                margin-top: 40px;
+                margin-left: 10px;
+                text-decoration:none;
+                color: $veryDarkDesaturatedBlue;
+                border-bottom: 2px solid red;
+                
             }
         }
+        .contenedor_graphic_photo{
+            width: 100%;
+            grid-column: 1 / span 4;
+            height: 600px; 
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            
+            .graphicDesign{
+                background: url(../images/desktop/image-graphic-design.jpg) no-repeat center;
+                background-size: cover;
+                width: 50%;
+                position: relative;
+            }
+            .photography{
+                background: url(../images/desktop/image-photography.jpg) no-repeat center;
+                background-size: cover;
+                width: 50%;
+                position: relative;
+            }
+            .texto_trabajos{
+                margin: auto;
+                position: absolute;
+                bottom: 15%;
+                width: 57%;
+                text-align:center;
+                color: $darkDesaturatedCyan;
+                left: 21.5%;
+                h2{
+                    font-weight: 900;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size: 16px;
+                    font-family: $barlow;
+                }
+               
+            }
+
+        }
+        
     }
 
     .attribution { font-size: 11px; text-align: center; }
