@@ -8,225 +8,297 @@ $veryDarkGrayishBlue: hsl(213, 9%, 39%);
 $darkGrayishBlue: hsl(232, 10%, 55%);
 $grayishBlue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
-$barlow: 'Barlow', sans-serif;
-$fraunces: 'Fraunces', serif;
+$barlow: "Barlow", sans-serif;
+$fraunces: "Fraunces", serif;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.contenedor{
-    width: 90%;
+.contenedor {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+body {
+  background: #fff;
+  font-family: $fraunces;
+  font-size: 18px;
+  min-width: 1440px;
+  header {
+    background: url(../images/desktop/image-header.jpg) rgb(254, 255, 200)
+      center no-repeat;
+    background-size: contain;
     max-width: 1440px;
+    min-height: 800px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
     margin: auto;
-}
+    .contenedor {
+      font-family: $barlow;
+      p {
+        font-size: 28px;
+        margin-top: 37px;
+        font-weight: 900;
+        color: #fff;
+      }
+      .contenedor-navegacion {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+      }
+      .menu {
+        font-weight: 700;
+        margin-top: 30px;
+        a {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 14px;
+          text-indent: 5px;
+          color: #fff;
+        }
+        .enlaces {
+          margin: 0 30px;
+          margin-top: 16px;
+        }
+        div {
+          display: inline-block;
+          background: #fff;
+          padding: 10px 0px;
+          border-radius: 25px;
+          padding: 15px 20px;
+          text-align: center;
+          margin-left: 10px;
+          .contact {
+            font-size: 16px;
+            color: $veryDarkDesaturatedBlue;
+            font-family: $fraunces;
+            vertical-align: middle;
+          }
+        }
+      }
 
-body{
-    background: #fff;
-    font-family: $fraunces;
-    font-size: 18px;
-    header{
-        background: url(../images/desktop/image-header.jpg) rgb(254, 255, 200) center;
-        background-size: cover;
-        min-height: 800px;
+      h1 {
+        display: inline-block;
+        margin-top: 100px;
+        font-size: 70px;
+        font-family: $fraunces;
+        text-transform: uppercase;
+        color: $white;
+      }
+
+      .arrow {
+        position: absolute;
+        right: 50%;
+        top: 44%;
+      }
+    }
+  }
+  section {
+    width: 100%;
+    .contenedor {
+      width: 100%;
+      display: grid;
+      // border: 3px #000 solid;
+      grid-template-columns: auto auto auto auto;
+    }
+    .brand,
+    .audience {
+      grid-column: 1 / span 4;
+    }
+    .containerTestimonials{
+      grid-column: 1 / span 4;
+    }
+    .milk {
+      grid-column: 1 / span 1;
+    }
+    .orange {
+      grid-column: 2 / span 1;
+    }
+    .cone {
+      grid-column: 3 / span 1;
+    }
+    .sugarcubes {
+      grid-column: 4 / span 1;
+    }
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+
+    .brand,
+    .audience {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      margin: 0;
+    }
+    .imagen,
+    .texto {
+      max-width: 50%;
+      overflow: hidden;
+      img {
+        vertical-align: top;
         text-align: center;
+        max-width: 100%;
+      }
+    }
+    .audience {
+      flex-direction: row-reverse;
+    }
+
+    .texto {
+      margin: auto;
+      // margin-top: 250px;
+      text-align: justify;
+      padding: 50px 135px;
+
+      h2 {
+        font-size: 48px;
+        font-weight: 900;
+        text-align: left;
+        margin-bottom: 40px;
+        color: $veryDarkDesaturatedBlue;
+      }
+      p {
+        // color: $veryDarkGrayishBlue;
+        color: $darkGrayishBlue;
+        font-family: $barlow;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .learnMore {
+        display: inline-block;
+        margin-top: 40px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: $veryDarkDesaturatedBlue;
+        border-bottom: 2px solid red;
+      }
+    }
+    .contenedor_graphic_photo {
+      width: 100%;
+      grid-column: 1 / span 4;
+      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+
+      .graphicDesign {
+        background: url(../images/desktop/image-graphic-design.jpg) no-repeat
+          center;
+        background-size: cover;
+        width: 50%;
+        position: relative;
+      }
+      .photography {
+        background: url(../images/desktop/image-photography.jpg) no-repeat
+          center;
+        background-size: cover;
+        width: 50%;
+        position: relative;
+      }
+      .texto_trabajos {
+        margin: auto;
+        position: absolute;
+        bottom: 15%;
+        width: 57%;
+        text-align: center;
+        color: $darkDesaturatedCyan;
+        left: 21.5%;
+        h2 {
+          font-weight: 900;
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 16px;
+          font-family: $barlow;
+          inline-size: 90%;
+          position: relative;
+          left: 4%;
+          line-height: 25px;
+        }
+      }
+    }
+    .containerTestimonials{
+        height: 800px;
         position: relative;
         overflow: hidden;
-        .contenedor{
-            font-family: $barlow;
-            p{
-                font-size: 28px;
-                margin-top: 37px;
-                font-weight: 900;
-                color: #fff;
-            }
-           .contenedor-navegacion{
-                display: flex;
-                justify-content: space-between;
-                padding: 10px 0;
-           }
-            .menu{
-                font-weight: 700;
-                margin-top: 30px;
-                a{
-                    display: inline-block;
-                    text-decoration: none;
-                    font-size: 14px;
-                    text-indent: 5px;
-                    color: #fff;
-                }
-                .enlaces{
-                    margin: 0 30px;
-                    margin-top: 16px;
-                }
-                div{
-                    display: inline-block;
-                    background: #fff;
-                    padding: 10px 0px;
-                    border-radius: 25px;
-                    padding: 15px 20px;
-                    text-align:center;
-                    margin-left: 10px;
-                    .contact{
-                        font-size: 16px;
-                        color: $veryDarkDesaturatedBlue;
-                        font-family: $fraunces;
-                        vertical-align: middle;
-                       
-                    }    
-                }
-            }
-
-            h1{
-                display: inline-block;
-                margin-top: 100px;
-                font-size: 70px;
-                 font-family: $fraunces;
-                text-transform: uppercase;
-                color: $white;
-            }
-
-            .arrow{
-                position: absolute;
-                right: 50%;
-                top:44%;
-            }
-           
+        img{
+            border-radius: 50%;
+            width: 100px;
+            margin-bottom: 70px;
         }
-
-        
-    }
-    section{
-        width: 100%;
-        .contenedor{
-            width: 100%;
-            display: grid;
-            // border: 3px #000 solid;
-            grid-template-columns: auto auto auto auto;
+        h4{
+            font-size: 30px;
+            position: absolute;
+            left: 33%;
+            top: 20%;
+            letter-spacing: 4pt;
+            color: $grayishBlue;
         }
-        .brand,.audience{
-            grid-column: 1 / span 4;
-        }
-        .clientTestimonials{
-            grid-column: 1 / span 4;
-        }
-        .milk{
-            grid-column: 1 / span 1;
-        }
-        .orange{
-            grid-column: 2 / span 1;
-        }
-        .cone{
-            grid-column: 3 / span 1;
-        }
-        .sugarcubes{
-            grid-column: 4 / span 1;
-        }
-        .image{
-            width: 100%;
-            height: 100%;
-        }
-
-        .brand,.audience{
+        .clientTestimonials {
             display: flex;
-            width: 100%;
             flex-wrap: wrap;
+            width: 100%;
             justify-content: center;
-            align-content: center;
-            margin: 0;
-        }
-        .imagen,.texto{
-            max-width: 50%;
-            overflow: hidden;
-            img{
-                vertical-align: top;
-                text-align: center;
-                max-width: 100%;
-            }
-        }
-        .audience{      
-            flex-direction: row-reverse;
-        }
-        
-        .texto{
+            align-items: center;
+            text-align: center;
             margin: auto;
-            // margin-top: 250px;
-            text-align: justify;
-            padding: 50px 135px;
-
-            h2{
-                font-size: 48px;
-                font-weight: 900;
-                text-align: left;
-                margin-bottom: 40px;
-                color: $veryDarkDesaturatedBlue;
+            padding-top: 20%;
+            .testimonial{
+                width: 30%;
+                margin: 0 10px;
+                padding: 20px;
             }
             p{
-                // color: $veryDarkGrayishBlue;
                 color: $darkGrayishBlue;
                 font-family: $barlow;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 20px;
+                font-size: 20px;
+                line-height: 25pt;
+                text-indent: 5px;
+                text-align: center;
+                margin-bottom: 80px;
             }
-            .learnMore{
-                display: inline-block;
-                margin-top: 40px;
-                margin-left: 10px;
-                text-decoration:none;
+            h5{
+                font-family: $fraunces;
                 color: $veryDarkDesaturatedBlue;
-                border-bottom: 2px solid red;
-                
+                font-size: 15pt;
+                font-weight: 900;
             }
-        }
-        .contenedor_graphic_photo{
-            width: 100%;
-            grid-column: 1 / span 4;
-            height: 600px; 
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-            
-            .graphicDesign{
-                background: url(../images/desktop/image-graphic-design.jpg) no-repeat center;
-                background-size: cover;
-                width: 50%;
-                position: relative;
-            }
-            .photography{
-                background: url(../images/desktop/image-photography.jpg) no-repeat center;
-                background-size: cover;
-                width: 50%;
-                position: relative;
-            }
-            .texto_trabajos{
-                margin: auto;
-                position: absolute;
-                bottom: 15%;
-                width: 57%;
-                text-align:center;
-                color: $darkDesaturatedCyan;
-                left: 21.5%;
-                h2{
-                    font-weight: 900;
-                    margin-bottom: 30px;
-                }
-                p{
-                    font-size: 16px;
-                    font-family: $barlow;
-                }
-               
-            }
+            .profesion{
+                font-size: 11pt;
+                color: $grayishBlue;
 
+            }
         }
-        
+    
     }
+    
+  }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  footer {
+    clear: both;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+    //   letter-spacing: 2pt;      /* para separar entgre letras */
+    //   word-spacing: 5pt;        /* para separacion entre palabras */  
+    //   line-height: 20pt;        /* para la separacion entre lineas */ 
+    //   text-indent: 30pt;        /* para sangrias */  
 }
-
