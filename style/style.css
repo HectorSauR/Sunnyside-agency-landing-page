@@ -17,14 +17,13 @@ body {
   background: #fff;
   font-family: "Fraunces", serif;
   font-size: 18px;
-  min-width: 1440px;
 }
 
 body header {
   background: url(../images/desktop/image-header.jpg) #feffc8 center no-repeat;
-  background-size: contain;
+  background-size: cover;
   max-width: 1440px;
-  min-height: 800px;
+  height: 800px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -199,6 +198,7 @@ body section .texto {
   margin: auto;
   text-align: justify;
   padding: 50px 135px;
+  position: relative;
 }
 
 body section .texto h2 {
@@ -223,7 +223,18 @@ body section .texto .learnMore {
   margin-left: 10px;
   text-decoration: none;
   color: #23303e;
-  border-bottom: 2px;
+  border-bottom: 5px solid #fe7867;
+  opacity: .5;
+}
+
+body section .texto .learnMore:hover {
+  opacity: 1;
+}
+
+body section .texto .subTexto {
+  background: red;
+  border-bottom: 10px solid #fe7867;
+  bottom: 0;
 }
 
 body section .contenedor_graphic_photo {
@@ -288,14 +299,15 @@ body section .containerTestimonials {
 body section .containerTestimonials img {
   border-radius: 50%;
   width: 100px;
-  margin-bottom: 70px;
+  margin-bottom: 10%;
 }
 
 body section .containerTestimonials h4 {
   font-size: 30px;
   position: absolute;
   left: 33%;
-  top: 20%;
+  top: 15%;
+  margin-bottom: 10px;
   letter-spacing: 4pt;
   color: #a7abae;
 }

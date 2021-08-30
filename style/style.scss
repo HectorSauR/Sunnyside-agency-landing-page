@@ -31,14 +31,14 @@ body {
   background: #fff;
   font-family: $fraunces;
   font-size: 18px;
-  min-width: 1440px;
+  // min-width: 1440px;
   //   overflow: hidden;
   header {
     background: url(../images/desktop/image-header.jpg) rgb(254, 255, 200)
       center no-repeat;
-    background-size: contain;
+    background-size: cover;
     max-width: 1440px;
-    min-height: 800px;
+    height: 800px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -166,6 +166,7 @@ body {
       // margin-top: 250px;
       text-align: justify;
       padding: 50px 135px;
+      position: relative;
 
       h2 {
         font-size: 48px;
@@ -188,8 +189,18 @@ body {
         margin-left: 10px;
         text-decoration: none;
         color: $veryDarkDesaturatedBlue;
-        border-bottom: 2px;
+        border-bottom: 5px solid $softRed;
+        opacity: .5;
+        &:hover{
+          opacity: 1;
+        }
       }
+      .subTexto{
+        background: red;
+        border-bottom: 10px solid $softRed;
+        bottom: 0;
+      }
+      
     }
     .contenedor_graphic_photo {
       width: 100%;
@@ -243,13 +254,14 @@ body {
       img {
         border-radius: 50%;
         width: 100px;
-        margin-bottom: 70px;
+        margin-bottom: 10%;
       }
       h4 {
         font-size: 30px;
         position: absolute;
         left: 33%;
-        top: 20%;
+        top: 15%;
+        margin-bottom: 10px;
         letter-spacing: 4pt;
         color: $grayishBlue;
       }
