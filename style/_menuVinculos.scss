@@ -1,0 +1,52 @@
+$veryDarkGrayishBlue: hsl(213, 9%, 39%);
+
+body {
+  header {
+    .contenedorFlotante {
+      width: 90%;
+      position: absolute;
+      z-index: 2;
+      background: #fff;
+      top: 20%;
+      height: 300px;
+      display: none;
+      .menu2 {
+        display: inline-block;
+        margin-top: 20px;
+        a {
+          color: $veryDarkGrayishBlue;
+          display: block;
+          margin-top: 15px;
+          font-size: 15pt;
+          line-height: 30pt;
+          text-decoration: none;
+          font-size: 20px;
+        }
+        .contenedor-contacto {
+          margin: 20px 0;
+          background: $yellow;
+          padding: 5px 25px;
+          border-radius: 25px;
+          a {
+            margin-top: 0;
+            color: #000;
+            font-family: $fraunces;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    
+    .trianguloMenu {
+        clip-path: polygon(100% 0, 100% 0, 0 100%, 100% 100%);
+        position: absolute;
+        z-index: 1;
+        top: 80px;
+        right: 18.75px;
+        height: 50px;
+        width: 50px;
+        background: #fff;
+        display: none;
+    }
+  }
+}
