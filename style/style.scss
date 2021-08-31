@@ -57,6 +57,10 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 10px 0;
+        
+      }
+      .barraMenu{
+        display: none;
       }
       .menu {
         font-weight: 700;
@@ -86,6 +90,12 @@ body {
             font-family: $fraunces;
             vertical-align: middle;
           }
+          &:hover{
+            background: rgb(111, 207, 255);
+            .contact{
+              color: #fff;
+            }
+          }
         }
       }
 
@@ -100,7 +110,7 @@ body {
 
       .arrow {
         position: absolute;
-        right: 50%;
+        right: 48%;
         top: 44%;
       }
     }
@@ -195,11 +205,7 @@ body {
           opacity: 1;
         }
       }
-      .subTexto{
-        background: red;
-        border-bottom: 10px solid $softRed;
-        bottom: 0;
-      }
+      
       
     }
     .contenedor_graphic_photo {
@@ -346,6 +352,11 @@ body {
           color: $darkDesaturatedCyan;
         }
       }
+      a{
+        &:hover{
+          color:#fff;
+        }
+      }
     }
   }
 
@@ -364,3 +375,5 @@ body {
   //   line-height: 20pt;        /* para la separacion entre lineas */
   //   text-indent: 30pt;        /* para sangrias */
 }
+
+@import 'mediaQuerys';

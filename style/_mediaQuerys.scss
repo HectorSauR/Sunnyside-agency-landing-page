@@ -1,0 +1,179 @@
+@media screen and (max-width: 375px) {
+  body {
+    header {
+      background-image: url(../images/mobile/image-header.jpg);
+      height: 538px;
+      .contenedor {
+        nav {
+          display: none;
+        }
+        p {
+          display: inline-block;
+          margin: 0;
+        }
+        h1 {
+          font-size: 50px;
+          line-height: 40pt;
+        }
+        .arrow {
+          right: 45%;
+          top: 54%;
+        }
+        .contenedor-navegacion {
+          .barraMenu {
+            display: inline-block;
+            color: #fff;
+            font-size: 28px;
+            margin: 0 15px 0 0;
+          }
+        }
+      }
+    }
+    section {
+      .contenedor {
+        width: 375px;
+        grid-template-columns: auto auto;
+      }
+      .brand,
+      .audience,
+      .containerTestimonials {
+        grid-column: 1 / span 2;
+      }
+      .milk {
+        grid-column: 1 / span 1;
+      }
+      .orange {
+        grid-column: 2 / span 1;
+      }
+      .cone {
+        grid-column: 1 / span 1;
+      }
+      .sugarcubes {
+        grid-column: 2 / span 1;
+      }
+      .brand,
+      .audience {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column-reverse;
+        margin: 0;
+      }
+      .imagen,
+      .texto {
+        min-width: 100%;
+        overflow: hidden;
+        padding: 0;
+        img {
+          display: none;
+        }
+      }
+      .texto {
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0 24px;
+        h2 {
+          font-size: 30px;
+          text-align: center;
+          margin-top: 40px;
+        }
+        p {
+          line-height: 22pt;
+          font-size: 17px;
+        }
+        .learnMore {
+          margin-bottom: 20px;
+        }
+      }
+      .brand {
+        .imagen {
+          background: url(../images/mobile/image-transform.jpg) no-repeat;
+          height: 312px;
+          background-size: cover;
+        }
+      }
+      .audience {
+        .texto {
+          padding: 0 15px;
+          h1 {
+            word-spacing: 5pt;
+          }
+        }
+        .imagen {
+          background: url(../images/mobile/image-stand-out.jpg) no-repeat;
+          height: 312px;
+          background-size: cover;
+        }
+      }
+      .contenedor_graphic_photo {
+        grid-column: 1 / span 2;
+        flex-direction: column;
+        height: 1200px;
+        .graphicDesign {
+          background-image: url(../images/mobile/image-graphic-design.jpg);
+          width: 100%;
+          height: 600px;
+          vertical-align: top;
+        }
+        .photography {
+          width: 100%;
+          background-image: url(../images/mobile/image-photography.jpg);
+          height: 600px;
+          vertical-align: top;
+        }
+        .texto_trabajos {
+          position: absolute;
+          top: 60%;
+          margin: 0;
+          width: 90%;
+          margin: auto;
+          left: 20px;
+          p {
+            inline-size: 100%;
+            position: static;
+            font-size: 16px;
+          }
+        }
+      }
+      .containerTestimonials {
+        height: 1200px;
+        img {
+          width: 70px;
+        }
+        h4 {
+          font-size: 15px;
+          position: static;
+          margin-top: 80px;
+          margin-bottom: 40px;
+          letter-spacing: 4pt;
+          color: $grayishBlue;
+          text-align: center;
+        }
+        .clientTestimonials {
+          flex-direction: column;
+          margin-top: 0;
+          padding: 0;
+          .testimonial {
+            width: 100%;
+          }
+          p {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-indent: 0%;
+          }
+        }
+      }
+    }
+    footer {
+        .contenedor{
+            nav{
+                width: 100%;
+            }
+            .redesSociales {
+                width: 50%;
+              }
+        }
+    }
+  }
+}
